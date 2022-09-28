@@ -3,9 +3,9 @@ package it.hillel.hw12;
 import java.util.Arrays;
 import java.util.Random;
 
-
-public class hw12Main {
+public class HW12Main {
     public static void main(String[] args) {
+
 
         Random random = new Random();
 
@@ -31,7 +31,6 @@ public class hw12Main {
         System.out.println(" ");
         System.out.println( Arrays.toString(company));
         System.out.printf("Number of matches: " + count);
-
 
 
 
