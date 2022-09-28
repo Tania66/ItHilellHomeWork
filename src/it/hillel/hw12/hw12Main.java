@@ -2,7 +2,7 @@ package it.hillel.hw12;
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class hw12Main {
     public static void main(String[] args) {
@@ -16,13 +16,10 @@ public class hw12Main {
 
         }
         Arrays.sort(company);
-        System.out.println("Write number 0 to 9");
-        Scanner console = new Scanner(System.in);
-
 
         int [] player = new int[7];
         for (int i = 0; i<player.length;i++){
-            player[i] = console.nextInt();
+            player[i] = random.nextInt(10);
             Arrays.sort(player);
         }
         int count = 0;
