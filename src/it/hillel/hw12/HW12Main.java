@@ -9,29 +9,33 @@ public class HW12Main {
         Random random = new Random();
 
         int [] company = new int[7];
-
         for (int i =0; i<company.length;i++) {
-            company[i] = random.nextInt(10);
+            company[i] = random.nextInt(9);
         }
         Arrays.sort(company);
-        System.out.println("Write number 0 to 9");
-
 
 
         int [] player = new int[7];
-        for (int i = 0; i<player.length;i++){
-            player[i] = random.nextInt(10);
-            Arrays.sort(player);
+        for (int r = 0; r<player.length;r++){
+            player[r] = random.nextInt(9);
         }
-        int count = 0;
-        for (int i = 0; i < 7; i++) {
-            if (company[i]==player[i])count++;
-        }
+        Arrays.sort(player);
 
+        System.out.print("Numbers that are matched: ");
+        int count = 0;
+        for (int r = 0; r < player.length; r++) {
+            if (company[r] == player[r]){
+                System.out.print(player[r] + " ");
+                count++;
+            }
+        }
+        System.out.println();
+        System.out.println("Number company: ");
         System.out.println( Arrays.toString(player));
         System.out.println(" ");
+        System.out.println("Number player: ");
         System.out.println( Arrays.toString(company));
-        System.out.printf("Number of matches: " + count);
+        System.out.println("Count of matched numbers: " + count );
     }
 }
 
